@@ -1,7 +1,5 @@
 package com.edu.sena.models.entity;
 
-//import java.time.OffsetDateTime;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -35,7 +33,7 @@ public class OrdenR {
 	private Equipo equipo;
 	
 	@ManyToOne
-	@JoinColumn(name = "empleado")//si le pongo not null sale este error : not-null property references a null or transient value
+	@JoinColumn(name = "empleado", nullable = false)
 	private Empleado empleado ;
 
 	public OrdenR() {
@@ -118,18 +116,19 @@ public class OrdenR {
 		this.equipo = equipo;
 	}
 
-	public Empleado getEmpelado() {
+	public Empleado getEmpleado() {
 		return empleado;
 	}
 
-	public void setEmpelado(Empleado empelado) {
-		this.empleado = empelado;
+	public void setEmpleado(Empleado empleado) {
+		this.empleado = empleado;
 	}
 
 	@Override
 	public String toString() {
 		return "OrdenR [codigo=" + codigo + ", estado=" + estado + ", servicio=" + servicio + ", observacion="
 				+ observacion + ", cliente=" + cliente + ", equipo=" + equipo + ", empleado=" + empleado + "]";
-	}	
+	}
+	
 	
 }

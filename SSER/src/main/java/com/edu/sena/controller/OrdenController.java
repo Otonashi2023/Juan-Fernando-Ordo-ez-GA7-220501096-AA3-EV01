@@ -59,7 +59,7 @@ public class OrdenController {
 		oEnBD.setObservacion(o.getObservacion());
 		oEnBD.setCliente(o.getCliente());
 		oEnBD.setEquipo(o.getEquipo());
-		oEnBD.setEmpelado(o.getEmpelado());
+		oEnBD.setEmpleado(o.getEmpleado());
 		
 		
 		return ordenService.save(oEnBD);
