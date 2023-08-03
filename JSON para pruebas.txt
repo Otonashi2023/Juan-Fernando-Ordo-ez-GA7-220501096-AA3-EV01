@@ -1,11 +1,12 @@
 // Guardar en este orden para no generar error con las llaves foraneas
-// para registrar un cargo
+
+// para registrar un cargo: localhost:8080/api/cargo
 {
         "codigo": 1,
         "nombre": "Tecnico"
 }
 
-// para registrar un empleado
+// para registrar un empleado: localhost:8080/api/empleado
 {
         "codigo": 1,
         "nombre": "Fernando",
@@ -18,7 +19,7 @@
         "cargo": 1
 }
 
-// para registrar un cliente
+// para registrar un cliente: localhost:8080/api/cliente
 {
         "codigo": 1,
         "nombre": "Cristina",
@@ -29,7 +30,7 @@
         "correo":"@gmail"
 }
 
-// para registrar un equipo
+// para registrar un equipo: localhost:8080/api/equipo
 {
         "codigo": 1,
         "tipo": "TV",
@@ -38,7 +39,7 @@
         "serial" : 123456789012
 }
 
-// para registrar un ordende reparacion
+// para registrar un ordende reparacion: localhost:8080/api/ordenr
 {
 	"codigo": 1,	
         "estado": "Sin reparar",
