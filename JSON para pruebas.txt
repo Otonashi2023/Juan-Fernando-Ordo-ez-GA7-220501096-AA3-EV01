@@ -1,0 +1,50 @@
+// Guardar en este orden para no generar error con las llaves foraneas
+// para registrar un cargo
+{
+        "codigo": 1,
+        "nombre": "Tecnico"
+}
+
+// para registrar un empleado
+{
+        "codigo": 1,
+        "nombre": "Fernando",
+        "apellido": "Ordoñez",
+        "cedula": 44444444444,
+        "telefono" : 3173341333,
+        "direccion": "Desconocido",
+        "correo":"fercho24lonewolf@hotmail.com",
+        "salario":5555555555,
+        "cargo": 1
+}
+
+// para registrar un cliente
+{
+        "codigo": 1,
+        "nombre": "Cristina",
+        "apellido": "Hernandez",
+        "cedula": 1234567890,
+        "telefono" : 3199999999,
+        "direccion": "Desconocido",
+        "correo":"@gmail"
+}
+
+// para registrar un equipo
+{
+        "codigo": 1,
+        "tipo": "TV",
+        "marca": "LG",
+        "modelo": "tv50s",
+        "serial" : 123456789012
+}
+
+// para registrar un ordende reparacion
+{
+	"codigo": 1,	
+        "estado": "Sin reparar",
+        "servicio": "Garantia de fabrica",
+        "observacion": "No enciende",
+        "cliente": 1,
+        "equipo" : 1,
+        "empleado": 1
+}
